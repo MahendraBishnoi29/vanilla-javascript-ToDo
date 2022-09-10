@@ -62,6 +62,7 @@ function deleteTodo(e) {
   }
 }
 
+//filter todo
 function filterTodo(e) {
   const todos = todoList.childNodes;
   todos.forEach(function (todo) {
@@ -86,6 +87,7 @@ function filterTodo(e) {
   });
 }
 
+// save todos to local storage
 function saveLocalTodos(todo) {
   let todos;
   if (localStorage.getItem("todos") === null) {
